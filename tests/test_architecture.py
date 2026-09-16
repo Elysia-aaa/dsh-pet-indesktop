@@ -107,8 +107,12 @@ WINDOW_PY_LINE_BUDGET = 4507
 # 2026-09-15 上调到 2270：语音报时设置页接入（页面实例化/SettingRow 收集/
 # _write_config 写回/试听透传回调）与两开关、音色下拉改造，实测 2255；
 # 按文件约定预算只随实测校准，不为达标压缩行宽/合并语句；拆分仍是待办。
+# 2026-09-16 上调到 2300：合并上游展开式格式（当时整块 SettingsSection 从
+# 紧凑单行改为 Black 风格展开，仅格式就 +100 行以上）叠加「音乐关联」分组
+# （3 行 SettingRow）+「消费统计」一级分组，实测 2300；按文件约定预算只随
+# 实测校准，不为达标压缩行宽/合并语句；拆分仍是待办。
 # 本文件拆分仍是待办，拆分前预算只随实测校准。
-MODERN_SETTINGS_DIALOG_PY_LINE_BUDGET = 2270
+MODERN_SETTINGS_DIALOG_PY_LINE_BUDGET = 2300
 
 
 
